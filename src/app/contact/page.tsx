@@ -7,7 +7,7 @@ const ContactPage = () => {
     <main className='main contact-bg'>
         <section className="contact">
             <div className="container">
-                <h1 className="section-title">Don't miss a chance <br/>
+                <h1 className="section-title">Don&#39;t miss a chance <br/>
                     to talk with us</h1>
         
                 <div className="contact__wrapper">

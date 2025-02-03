@@ -3,7 +3,7 @@
 import React from 'react';
 import Links from "./links/Links";
 import Link from 'next/link';
-
+import Image from "next/image";
 import { useDispatch, useSelector } from 'react-redux';
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { RootState } from '../../store/store';
@@ -29,7 +29,7 @@ const HeaderComponent = ({isTopOfPage}: TopOfPageProps) => {
             <div className="header__inner">
                   <div className="action__btn action__btn-md">Call Me</div>
                   <Link className="logo" href={"/"}>
-                    <img className="logo__img" src="/img/logo.svg" alt="logo" />
+                    <Image width={121} height={64} className="logo__img" src="/img/logo.svg" alt="logo" />
                   </Link>
                 {isAboveMediumScreens ? (
                   <button className={isMenuToggled ? "menu__btn menu__btn--active" : "menu__btn"} id='menu__btn' onClick={() => dispatch(toggleMenu())}>

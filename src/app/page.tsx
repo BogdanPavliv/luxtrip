@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "./page.module.scss";
 import Link from 'next/link';
 import { dataBook } from "./utils/data";
 import { Manrope } from "next/font/google";
@@ -29,8 +28,8 @@ const manrope = Manrope({
 });
 
 const Home = () => {
-  const [selectedOption1, setSelectedOption1] = useState('1 Adventure Travel');
-  const [selectedOption2, setSelectedOption2] = useState('1 Person');
+  // const [selectedOption1, setSelectedOption1] = useState('1 Adventure Travel');
+  // const [selectedOption2, setSelectedOption2] = useState('1 Person');
 
   // Parallax Animation
 
@@ -245,7 +244,7 @@ const Home = () => {
                 <div className="luxary__item trip-link">
                   <Image src="/img/section-extraordinary/catalog/luxary02.jpg" alt="luxary link" width={350} height={570} />
                   <div className="trip-link__content">
-                    <div className="trip-link__title title_h5">The world's most extraordinary places</div>
+                    <div className="trip-link__title title_h5">The world&apos;s most extraordinary places</div>
                   </div>
                   <a href="" className="trip-link__link">
                     <span className="trip-link__link-wrapper">

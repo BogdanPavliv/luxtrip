@@ -156,7 +156,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                         <li>8 days / 7 nights</li>
                         <li>guided small groups</li>
                         <li>16</li>
-                        <li>level 1/4 &#40;easy&#41; </li>
+                        <li>level 1/4  &#40;easy&#41; </li>
                         <li>sep - mar</li>
                       </ul>
                     </div>
@@ -227,7 +227,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                     </div>
                     <div className="luxury-tour-plan__item-right">
                       <p className="luxury-tour-plan__item-text">
-                        On arrival at Keflavik International Airport, you will be greeted by a driver who will transfer you to your hotel in the city centre of Reykjavík. After settling in, the rest of the day is free for you to explore the vibrant capital city with its abundance of museums, restaurants and bars to suit all tastes. If you're interested in checking out Icelandic design or experiencing the city's thriving coffee culture, head to the main street, Laugavegur, and enjoy its various shops and cosy cafes.
+                        On arrival at Keflavik International Airport, you will be greeted by a driver who will transfer you to your hotel in the city centre of Reykjavík. After settling in, the rest of the day is free for you to explore the vibrant capital city with its abundance of museums, restaurants and bars to suit all tastes. If you&apos;re interested in checking out Icelandic design or experiencing the city&apos;s thriving coffee culture, head to the main street, Laugavegur, and enjoy its various shops and cosy cafes.
                       </p>
                       <p className="luxury-tour-plan__item-text">
                         At 18:00, you will meet your group and guide for a welcome drink and a short introduction about the itinerary and some useful information about the coming days. Spend the night at Center Hotel Laugavegur or similar. For those arriving early today you have the option to upgrade your journey from the airport with a visit to the Blue Lagoon geothermal spa before heading to the city. It´s the perfect way to start your Iceland adventure!
@@ -323,7 +323,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                     </div>
                     <div className="luxury-tour-plan__item-right">
                       <p className="luxury-tour-plan__item-text">
-                        When it’s time for your Iceland adventure to end, you will be picked up from your hotel by a shuttle bus about three hours before your flight. If you’re flying in the afternoon, you have the option to visit the Blue Lagoon geothermal spa to relax in the warm mineral waters before continuing to the airport &#40;optional: not included&#41;. If you are interested in extending your stay, we can book extra nights and activities in the Reykjavík area or even combine this tour with a visit to one of our other Nordic destinations.
+                        When it’s time for your Iceland adventure to end, you will be picked up from your hotel by a shuttle bus about three hours before your flight. If you’re flying in the afternoon, you have the option to visit the Blue Lagoon geothermal spa to relax in the warm mineral waters before continuing to the airport &#40;optional: not included&#41; . If you are interested in extending your stay, we can book extra nights and activities in the Reykjavík area or even combine this tour with a visit to one of our other Nordic destinations.
                       </p>
                       <h6 className="luxury-tour-plan__title">Included:</h6>
                       <ul className="luxury-tour-plan__item-list">

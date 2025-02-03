@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Forum } from "next/font/google";
-import { Manrope } from "next/font/google";
 import "./globals.scss";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
