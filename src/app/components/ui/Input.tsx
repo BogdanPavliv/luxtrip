@@ -9,7 +9,7 @@ type InputProps = {
 }
 
 export const Input: React.FC<InputProps>  = ({label, placeholder, ...props}) => {
-  const [_, meta] = useField(props);
+  const [, meta] = useField(props);
   
   return (
     <div className="customise-page__column direction-column">
