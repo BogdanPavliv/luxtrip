@@ -1,0 +1,305 @@
+.contact-bg {
+  background-image: url("/img/contact/background-top.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e2d3ce;
+  position: relative;
+}
+
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 540px;
+  height: 285px;
+  background-image: url("/img/contact/clouds-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+
+.contact-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 518px;
+  background-image: url("/img/contact/clouds-bottom-1.png"),
+    url("/img/contact/clouds-bottom-2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: left, right;
+}
+
+.contact {
+  margin-bottom: 170px;
+}
+
+.container-contact {
+  max-width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 58px;
+  text-align: center;
+  color: #0c0b10;
+  margin-bottom: 31px;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.block {
+  max-width: 539px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(65px);
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+
+.phone-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 117px 54px;
+}
+
+.address-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 26px 109px 53px;
+}
+
+.block__title {
+  font-family: "Forum";
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.block__phone-number {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #0c0b10;
+  margin-bottom: 15px;
+}
+
+.block__subtitle {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0c0b10;
+  margin-bottom: 16px;
+}
+
+.block__btn {
+  background: #0c0b10;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 74px;
+  padding: 15px 59px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.block__btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.block__address {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #0c0b10;
+  margin-bottom: 20px;
+}
+
+.block__email {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 179.8%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.block__email-link {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 101.2%;
+  text-align: center;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.block__email-link:hover {
+  color: #474747;
+}
+
+.map {
+  position: relative;
+  height: 621px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/contact/border.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.map__image {
+  position: absolute;
+  width: 100%;
+  height: 565px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 39px;
+}
+
+.map__icon-location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .contact-bg::before,
+  .contact-bg::after {
+    background-image: none;
+  }
+
+  .container-contact {
+    width: 100%;
+  }
+
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone-block {
+    padding: 48px 82px 54px;
+    margin-bottom: 50px;
+  }
+
+  .address-block {
+    padding: 48px 82px 54px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .map {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact {
+    margin-bottom: 108px;
+  }
+
+  .section-title {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .block {
+    max-width: 350px;
+    padding: 48px 34px 54px;
+  }
+
+  .block__phone-number {
+    font-size: 30px;
+  }
+
+  .block__btn {
+    font-size: 20px;
+    padding: 15px 39px;
+  }
+
+  .block__address {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .map {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 374px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .block {
+    max-width: 250px;
+  }
+
+  .block__btn {
+    font-size: 15px;
+    padding: 8px 32px;
+  }
+
+  .block__phone-number {
+    font-size: 24px;
+  }
+
+  .block__address {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .block__email-link {
+    font-size: 20px;
+  }
+}

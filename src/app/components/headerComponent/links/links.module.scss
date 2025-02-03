@@ -1,0 +1,10 @@
+.header__navList {
+  display: flex;
+  column-gap: 40px;
+}
+
+@media (max-width: 1150px) {
+  .header__navList {
+    column-gap: 30px;
+  }
+}

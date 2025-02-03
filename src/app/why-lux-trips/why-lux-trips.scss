@@ -1,0 +1,1566 @@
+.why-lux-page-bg {
+  background-color: #e2d3ce;
+  color: #000;
+  height: auto;
+  min-height: 100vh;
+}
+
+.luxtrips-book-slide:hover,
+.luxtrips-book-slide {
+  transition: all 0.5s ease-out;
+}
+
+.form-submit__btn:hover,
+.form-submit__btn,
+.luxtrips-btn:active,
+.luxtrips-btn:focus,
+.luxtrips-btn:hover,
+.luxtrips-btn {
+  transition: color 0.4s linear, background 0.4s ease-in-out;
+}
+
+.form-control::-moz-placeholder {
+  font-family: "Manrope", Arial, sans-serif;
+}
+
+.form-control::placeholder,
+.luxtrips-body {
+  font-family: "Manrope", Arial, sans-serif;
+}
+
+.subscription__title,
+.luxtrips-book-slide__title,
+.statistics-block__item > dd,
+.statistics-block__item > dt,
+.luxtrips-btn,
+.title,
+.title-main {
+  font-family: "Forum", serif;
+}
+
+
+.luxtrips-body {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  background-color: #e2d3ce;
+  color: #000;
+}
+
+.luxtrips-container {
+  max-width: 90rem;
+  width: 100%;
+  padding: 0 2.8125rem;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .luxtrips-container {
+    padding: 0 2.1875rem;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-container {
+    padding: 0 1.5625rem;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-container {
+    padding: 0 0.9375rem;
+  }
+}
+
+.title-main {
+  font-size: 12.375rem;
+  line-height: 0.65;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  max-width: 51.3125rem;
+  padding-left: 2.125rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #fcfcfc;
+}
+@media (max-width: 1024px) {
+  .title-main {
+    font-size: 9.375rem;
+  }
+}
+@media (max-width: 768px) {
+  .title-main {
+    font-size: 5.625rem;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .title-main {
+    font-size: 4.875rem;
+    padding-left: 0;
+  }
+}
+@media (max-width: 375px) {
+  .title-main {
+    font-size: calc(4.25rem + 0.625 * (100vw - 20rem) / 3.4);
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.01;
+  font-weight: 400;
+  font-style: normal;
+  color: #0c0b10;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.875rem;
+    line-height: 1.07;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+.luxtrips-btn {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  display: block;
+  background: #0c0b10;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 74px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.luxtrips-btn:hover {
+  background: #fff;
+  color: #0c0b10;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.luxtrips-btn:focus {
+  background: #8eb0ca;
+  color: #040c20;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.luxtrips-btn:active {
+  background: #63a9df;
+  box-shadow: none;
+}
+.luxtrips-btn::before {
+  content: "";
+  background-image: url("/img/why-lux-trips/icons/btn-decor-top.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 234px;
+  height: 78px;
+  z-index: -1;
+}
+.luxtrips-btn::after {
+  content: "";
+  background-image: url("/img/why-lux-trips/icons/btn-decor-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 14px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .luxtrips-btn:hover {
+    background: #0c0b10;
+    color: #fff;
+    box-shadow: none;
+  }
+}
+
+.visualy-hidden {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.luxtrips-preview {
+  padding-top: 0.625rem;
+  margin-top: -10rem;
+  position: relative;
+}
+.luxtrips-preview::before {
+  content: "";
+  background-image: url("/img/why-lux-trips/img/preview-cloude-left.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: -247px;
+  left: 0;
+  max-width: 343px;
+  width: 100%;
+  max-height: 459px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview::before {
+    background-image: url("/img/why-lux-trips/img/preview-cloude-left-mob.webp");
+    width: 138px;
+    height: 178px;
+    bottom: 397px;
+  }
+}
+.luxtrips-preview::after {
+  content: "";
+  background-image: url("/img/why-lux-trips/img/preview-cloude-right.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  max-width: 411px;
+  width: 100%;
+  max-height: 354px;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview::after {
+    background-image: url("/img/why-lux-trips/img/preview-cloude-right-mob.webp");
+    width: 151px;
+    height: 117px;
+    bottom: 330px;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview {
+    padding-bottom: 2.1875rem;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview {
+    padding-top: 0;
+  }
+}
+
+.luxtrips-preview-bg {
+  background-image: url("/img/why-lux-trips/img/mountains-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  background-size: cover;
+}
+.luxtrips-preview-bg:before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(226, 211, 206, 0) 0%,
+    rgba(226, 211, 206, 0.37) 42.71%,
+    #e2d3ce 100%
+  );
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 375px) {
+  .luxtrips-preview-bg:before {
+    height: 354px;
+  }
+}
+
+.luxtrips-preview-bg::after {
+  content: "";
+  background-image: url("/img/why-lux-trips/img/mountain.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 13%;
+  left: 46.5%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: 738px;
+  height: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 1440px) {
+  .luxtrips-preview-bg::after {
+    max-height: 523px;
+    top: 17%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-bg::after {
+    background-size: auto;
+    top: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-preview-bg::after {
+    top: 9%;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-bg::after {
+    background-image: url("/img/why-lux-trips/img/mountain-mob.webp");
+    top: 13%;
+    left: 48%;
+    max-height: 299px;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-bg {
+    background-position: center -117px;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-bg {
+    background-image: url("/img/why-lux-trips/img/mountains-bg-mob.webp");
+    background-position: center 7px;
+    background-size: auto;
+  }
+}
+
+.luxtrips-preview__container {
+  position: relative;
+  padding-top: 157px;
+}
+
+.luxtrips-preview-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 3.5625rem;
+  column-gap: 3.5625rem;
+  max-width: 64.4375rem;
+  list-style: none;
+  margin: -35px auto 0;
+}
+@media (max-width: 1024px) {
+  .luxtrips-preview-cards {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -moz-column-gap: 0.75rem;
+    column-gap: 0.75rem;
+    list-style: none;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-preview-cards {
+    padding-top: 45px;
+  }
+}
+
+.luxtrips-preview-card {
+  max-width: 17.75rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-card {
+    max-width: 5.1875rem;
+  }
+}
+
+.preview-card-center {
+  max-width: 21.8125rem;
+  width: 100%;
+  padding-top: 16.25rem;
+}
+@media (max-width: 768px) {
+  .preview-card-center {
+    padding-top: 1.25rem;
+    max-width: 9.4375rem;
+  }
+}
+
+.luxtrips-preview-card__picture {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  min-height: 385px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__picture-left,
+  .luxtrips-preview-card__picture-right {
+    min-height: 212px;
+  }
+}
+
+.luxtrips-preview-card__image-block {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+.luxtrips-preview-card__image-block img {
+  /* -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; */
+}
+.luxtrips-preview-card__image-block::before {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  width: 49px;
+  height: 49px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__image-block-left::before {
+    width: 28px;
+    height: 28px;
+    bottom: -12px;
+  }
+}
+.luxtrips-preview-card__image-block-left:after {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-preview-card__image-block-left:after {
+    width: 17px;
+    height: 17px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__image-block-right::before {
+    width: 28px;
+    height: 28px;
+    bottom: -12px;
+  }
+}
+
+.luxtrips-preview-card__image-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-card__img-blur {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  z-index: 0;
+  opacity: 0.67;
+  filter: blur(15px);
+}
+@media (max-width: 768px) {
+  .preview-card__img-blur {
+    top: 20px;
+    left: 4px;
+  }
+}
+
+.preview-card__img-blur-right {
+  left: -10px;
+}
+@media (max-width: 768px) {
+  .preview-card__img-blur-right {
+    left: -4px;
+  }
+}
+
+.preview-card__image {
+  margin-bottom: 4.0625rem;
+}
+
+.preview-card__image-center {
+  margin-bottom: 3.25rem;
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-card__content {
+    display: none;
+  }
+}
+
+.preview-card__title {
+  margin-bottom: 20px;
+}
+
+.preview-card__text, 
+.experience__text,
+.offers__text,
+.offers-box__text,
+.mission__text {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28.8px;
+}
+
+.preview-card__text-center {
+  max-width: 17.75rem;
+  margin: 0 auto;
+}
+
+.luxtrips-preview-card__content-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .luxtrips-preview-card__content-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxtrips-preview-cards-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2.1875rem;
+    padding-top: 0.625rem;
+  }
+}
+
+.luxtrips-preview-card-mobile {
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  max-width: 21.625rem;
+}
+
+.preview-card-mobile-center {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .preview-card__image-mobile {
+    display: block;
+  }
+}
+
+.experience {
+  background: #e2d3ce;
+  padding-top: 2.4375rem;
+  padding-bottom: 9.0625rem;
+  position: relative;
+}
+.experience::before {
+  content: "";
+  background-image: url("/img/why-lux-trips/img/experience-cloude-left.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 375px;
+  max-width: 30.375rem;
+  width: 100%;
+  max-height: 32.375rem;
+  height: 100%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .experience::before {
+    background-image: url("/img/why-lux-trips/img/experience-cloude-left-mob.webp");
+    width: 133px;
+    height: 304px;
+    top: 211px;
+  }
+}
+.experience::after {
+  content: "";
+  background-image: url("/img/why-lux-trips/img/experience-cloude-right.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0px;
+  top: -140px;
+  max-width: 37.375rem;
+  width: 100%;
+  height: 74.9375rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .experience::after {
+    background-image: url("/img/why-lux-trips/img/experience-cloude-right-mob.webp");
+    width: 10.9375rem;
+    height: 20.4375rem;
+    top: -57px;
+  }
+}
+@media (max-width: 375px) {
+  .experience {
+    padding-top: 0.625rem;
+  }
+}
+
+.experience-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 1.5625rem;
+  position: relative;
+  z-index: 3;
+}
+
+.experience-box__info {
+  max-width: 33.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
+}
+@media (max-width: 768px) {
+  .experience-box__info {
+    flex-direction: column;
+    max-width: 17.75rem;
+    row-gap: 0.625rem;
+    text-align: center;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+.experience__title {
+  flex: 0 1 46%;
+  margin: 0;
+  text-align: start;
+}
+@media (max-width: 768px) {
+  .experience__title {
+    text-align: center;
+  }
+}
+
+.experience__text {
+  flex: 0 1 49%;
+}
+
+.experience-box__statistics {
+  position: relative;
+  max-width: 49.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
+  padding-top: 11.0625rem;
+}
+@media (max-width: 768px) {
+  .experience-box__statistics {
+    padding-top: 15.0625rem;
+  }
+}
+
+.statistics-block {
+  flex: 0 1 32%;
+  min-height: 5.3125rem;
+  position: relative;
+}
+.statistics-block::before {
+  content: "";
+  background-image: url("/img/why-lux-trips/icons/experience-decor.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 192px;
+  height: 365px;
+}
+@media (max-width: 768px) {
+  .statistics-block::before {
+    background-size: contain;
+    width: 153px;
+    height: 293px;
+  }
+}
+@media (max-width: 768px) {
+  .statistics-block {
+    min-height: 4.8125rem;
+    flex: 0 1 44%;
+  }
+  .statistics-block:nth-child(odd) {
+    padding-top: 51px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-block-left::before,
+  .statistics-block-right::before {
+    top: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-block-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+}
+
+.statistics-block__item {
+  position: relative;
+  text-align: center;
+}
+.statistics-block__item > dt {
+  font-size: 2.75rem;
+  line-height: 0.985;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .statistics-block__item > dt {
+    font-size: 2.1875rem;
+  }
+}
+.statistics-block__item > dd {
+  font-size: 1.3125rem;
+  line-height: 0.985;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .statistics-block__item > dd {
+    font-size: 1rem;
+  }
+}
+
+.offers {
+  position: relative;
+  padding-top: 4.1875rem;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .offers {
+    padding-top: 3.4375rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers {
+    padding-top: 1.1875rem;
+  }
+}
+
+.offers__title {
+  max-width: 33.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.offers__text {
+  max-width: 21.875rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .offers__text {
+    margin-bottom: 4.1875rem;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 360px) {
+  .offers__text {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.offers-box__wrapper {
+  max-width: 39.6875rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.offers-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 1.875rem;
+  column-gap: 1.875rem;
+  max-width: 39.6875rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 480px) {
+  .offers-box {
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+  }
+}
+@media (max-width: 360px) {
+  .offers-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 412px;
+  }
+}
+
+.offers-box__item-left {
+  position: relative;
+  max-width: 100%;
+  width: 43%;
+}
+
+.offers-box__image-block {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+}
+.offers-box__image-block img {
+  /* -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; */
+}
+.offers-box__image-block::before {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  width: 98px;
+  height: 98px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .offers-box__image-block::before {
+    width: 66px;
+    height: 66px;
+    bottom: -31px;
+  }
+}
+.offers-box__image-block:after {
+  content: "";
+  border: 1px solid #d6d8dc;
+  position: absolute;
+  right: -62px;
+  top: 30%;
+  width: 62px;
+  height: 62px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(45deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .offers-box__image-block:after {
+    width: 41px;
+    height: 41px;
+    right: -40px;
+  }
+}
+
+.offers-box__image-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offers-box__image-blur {
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  z-index: 0;
+  opacity: 0.67;
+  filter: blur(15px);
+}
+
+.offers-box__content {
+  max-width: 16.875rem;
+  padding-top: 1.25rem;
+}
+@media (max-width: 768px) {
+  .offers-box__content {
+    max-width: 15.9375rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers-box__content {
+    max-width: 10.625rem;
+    padding-top: 0;
+  }
+}
+
+.offers-box__text {
+  margin-bottom: 3.75rem;
+}
+.offers-box__text:first-child {
+  margin-bottom: 1.875rem;
+}
+@media (max-width: 480px) {
+  .offers-box__text:first-child {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .offers-box__text {
+    line-height: 1.5;
+  }
+}
+
+.offers__btn {
+  width: 15.9375rem;
+  max-width: 100%;
+  padding: 0.90625rem 1.6875rem;
+}
+@media (max-width: 480px) {
+  .offers__btn {
+    width: 21.5rem;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -130px;
+  }
+}
+@media (max-width: 375px) {
+  .offers__btn {
+    bottom: -34px;
+  }
+}
+
+.luxtrips-book {
+  position: relative;
+  background-image: url("/img/why-lux-trips/img/book-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 30.75rem;
+  margin-top: -20.25rem;
+  min-height: 77.6875rem;
+  z-index: 1;
+}
+.luxtrips-book:before {
+  content: "";
+  background: linear-gradient(
+    0deg,
+    rgba(226, 211, 206, 0) 0%,
+    rgba(226, 211, 206, 0.71) 42.71%,
+    #e2d3ce 100%
+  );
+  height: 618px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.luxtrips-book:after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(226, 211, 206, 0) 0%,
+    rgba(226, 211, 206, 0.71) 42.71%,
+    #e2d3ce 100%
+  );
+  height: 242px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 375px) {
+  .luxtrips-book:after {
+    height: 145px;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-book {
+    padding-top: 13.3125rem;
+    margin-top: -6.25rem;
+    min-height: 47.875rem;
+  }
+}
+
+.luxtrips-book__container {
+  position: relative;
+  z-index: 2;
+}
+
+.luxtrips-book__title {
+  max-width: 33.75rem;
+  margin-bottom: 3.9375rem;
+  text-align: start;
+}
+@media (max-width: 480px) {
+  .luxtrips-book__title {
+    padding-top: 3.125rem;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-book__title {
+    padding-top: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.luxtrips-book-slider {
+  margin-bottom: 5.5rem;
+}
+
+.luxtrips-book-slider__wrapper {
+  align-items: center;
+  height: 220px;
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slider__wrapper {
+    align-items: flex-start;
+    height: 100%;
+  }
+}
+
+.luxtrips-book-slide.swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  max-width: 33.75rem;
+  height: 11.9375rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 12px;
+  position: relative;
+}
+.luxtrips-book-slide:before {
+  content: "";
+  border: 1px solid #79655e;
+  position: absolute;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  z-index: 2;
+  transform: translate(-50%) rotate(135deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide:before {
+    width: 38px;
+    height: 38px;
+  }
+}
+.luxtrips-book-slide::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  z-index: 2;
+  background: rgba(144, 144, 144, 0.14);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transform: translate(-50%) rotate(135deg) skew(20deg, 20deg);
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide::after {
+    width: 28px;
+    height: 28px;
+  }
+}
+.luxtrips-book-slide:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slide:hover {
+    transform: unset;
+  }
+}
+@media (max-width: 375px) {
+  .luxtrips-book-slide.swiper-slide {
+    width: 17.3125rem;
+    height: 6.125rem;
+  }
+}
+
+.luxtrips-book-slide__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.slide-supercars {
+  background-image: url("/img/why-lux-trips/img/book-supercars.webp");
+}
+
+.slide-hotels {
+  background-image: url("/img/why-lux-trips/img/book-hotels.webp");
+}
+
+.slide-yachts {
+  background-image: url("/img/why-lux-trips/img/book-yachts.webp");
+}
+
+.slide-helicopter {
+  background-image: url("/img/why-lux-trips/img/book-helicopter.webp");
+}
+
+.slide-jet {
+  background-image: url("/img/why-lux-trips/img/book-jet.webp");
+}
+
+.slide-villas {
+  background-image: url("/img/why-lux-trips/img/book-viilas.webp");
+}
+
+.luxtrips-book-slide__title {
+  font-size: 2.75rem;
+  line-height: 0.985;
+  letter-spacing: 2px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .luxtrips-book-slide__title {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 480px) {
+  .luxtrips-book-slide__title {
+    font-size: 1.375rem;
+  }
+}
+
+.slider__pagination {
+  display: none;
+}
+@media (max-width: 374px) {
+  .slider__pagination {
+    display: block;
+  }
+}
+
+.luxtrips-book__btn {
+  width: 33.75rem;
+  max-width: 100%;
+  padding: 0.90625rem;
+  margin: 0 auto;
+}
+
+.mission {
+  position: relative;
+  background-image: url("/img/why-lux-trips/img/mission-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-size: cover;
+  padding-top: 5.3125rem;
+  min-height: 80rem;
+  height: 100%;
+  z-index: 1;
+}
+.mission:before {
+  content: "";
+  background: linear-gradient(
+    0deg,
+    rgba(226, 211, 206, 0) 0%,
+    rgba(226, 211, 206, 0.91) 42.71%,
+    #e2d3ce 100%
+  );
+  height: 486px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 375px) {
+  .mission:before {
+    height: 278px;
+    top: 247px;
+  }
+}
+.mission:after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(226, 211, 206, 0) 0%,
+    rgba(226, 211, 206, 0.71) 42.71%,
+    #e2d3ce 100%
+  );
+  height: 215px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 375px) {
+  .mission:after {
+    height: 123px;
+  }
+}
+@media (max-width: 1024px) {
+  .mission {
+    padding-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .mission {
+    background-image: url("/img/why-lux-trips/img/mission-bg-mob.webp");
+    background-position: center 261px;
+    background-size: contain;
+    min-height: 55.5625rem;
+    padding-top: 1.0625rem;
+  }
+}
+
+.mission__content {
+  max-width: 33.75rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.mission__text {
+  margin-bottom: 3.125rem;
+}
+.mission__text:first-child {
+  margin-bottom: 2.0625rem;
+}
+@media (max-width: 375px) {
+  .mission__text:first-child {
+    margin-bottom: 1.0625rem;
+  }
+}
+@media (max-width: 375px) {
+  .mission__text {
+    line-height: 1.5;
+  }
+}
+
+.mission__title {
+  text-align: start;
+  margin-bottom: 2.0625rem;
+}
+
+.newsletter-wrapper {
+  position: relative;
+  top: -168px;
+  margin-bottom: -84px;
+  z-index: 1;
+}
+
+@media (max-width: 375px) {
+  .newsletter-wrapper {
+    top: -104px;
+    margin-bottom: -49px;
+  }
+}
+
+.subscription__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 565px;
+  position: relative;
+}
+
+.subscription__bg {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+}
+.subscription__bg img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 565px;
+  height: 100%;
+  width: 100%;
+}
+
+.subscription__bg-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subscription__bg-blur {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  z-index: 0;
+  opacity: 0.56;
+  filter: blur(15.5274px);
+}
+
+.subscription__content {
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  z-index: 3;
+}
+@media (max-width: 1024px) {
+  .subscription__content {
+    left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__content {
+    top: 11%;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__content {
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 360px) {
+  .subscription__content {
+    top: 5%;
+  }
+}
+
+.subscription__info {
+  max-width: 32.5rem;
+  margin-bottom: 2.75rem;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .subscription__info {
+    max-width: 19.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__info {
+    margin-bottom: 3.75rem;
+  }
+}
+@media (max-width: 360px) {
+  .subscription__info {
+    margin-bottom: 1.875rem;
+    max-width: 16.25rem;
+  }
+}
+
+.subscription__title {
+  font-size: 3.75rem;
+  line-height: 0.96;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2.4375rem;
+}
+@media (max-width: 1024px) {
+  .subscription__title {
+    font-size: 3.125rem;
+  }
+}
+@media (max-width: 768px) {
+  .subscription__title {
+    font-size: 2.75rem;
+    line-height: 1;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__title {
+    margin-bottom: 0.3125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription__text {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .subscription__text {
+    max-width: 9.875rem;
+    margin: 0 auto;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 45.625rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .subscription-form {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 2.8125rem;
+  }
+}
+@media (max-width: 480px) {
+  .subscription-form {
+    row-gap: 2.5rem;
+  }
+}
+
+.form-control {
+  width: 486px;
+  padding: 0.8125rem 6.25rem 0.8125rem 1.875rem;
+  border-radius: 74px;
+  border: 1px solid #fff;
+  color: #0c0b10;
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: box-shadow 0.4s linear, background 0.4s ease-in-out;
+}
+.form-control::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-style: normal;
+  color: #0c0b10;
+}
+.form-control::placeholder {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  font-style: normal;
+  color: #0c0b10;
+}
+.form-control:focus {
+  outline: 0;
+  border: 2px solid #368be6;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.4s linear, background 0.4s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .form-control {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .form-control {
+    width: 19.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .form-control {
+    width: 16.25rem;
+  }
+}
+
+.form-submit {
+  position: absolute;
+  right: -40%;
+}
+@media (max-width: 1024px) {
+  .form-submit {
+    right: -23%;
+  }
+}
+@media (max-width: 768px) {
+  .form-submit {
+    position: relative;
+    right: 0;
+  }
+}
+
+.form-submit__btn {
+  background: #fff;
+  color: #0c0b10;
+  padding: 0.90625rem 1.25rem;
+  width: 20.625rem;
+}
+.form-submit__btn:hover {
+  background: #0c0b10;
+  color: #fff;
+  box-shadow: 5px 8px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.form-submit__btn::before {
+  content: "";
+  background-image: url("/img/why-lux-trips/icons/btn-form-decor-top.svg");
+  background-repeat: no-repeat;
+  width: 17.5rem;
+}
+.form-submit__btn::after {
+  content: "";
+  background-image: url("/img/why-lux-trips/icons/btn-form-decor-bottom.svg");
+}
+@media (max-width: 768px) {
+  .form-submit__btn {
+    width: 19.5rem;
+  }
+  .form-submit__btn:hover {
+    background: #fff;
+    color: #0c0b10;
+    box-shadow: none;
+  }
+}
+@media (max-width: 360px) {
+  .form-submit__btn {
+    width: 16.25rem;
+  }
+} 

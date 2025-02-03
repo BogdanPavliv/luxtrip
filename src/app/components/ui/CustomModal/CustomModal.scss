@@ -1,0 +1,182 @@
+/* --------------------------------------------------------- Footer styles end --------------------------------------------------------- */
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px 40px 10px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+/* .modal._active {
+    z-index: 110;
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+  max-height: 540px;
+  width: 95%;
+  height: 100%;
+  /* padding: 60px 60px 110px 60px; */
+  transform: translateY(50px);
+  transition: transform 0.3s;
+}
+.modal__menu {
+  max-width: 920px;
+  max-height: 525px;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  /* position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background: rgba(226, 211, 206, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s ease;
+}
+.modal__menu._active {
+  top: 50%;
+}
+.modal__frame {
+  content: "";
+  max-width: 885px;
+  max-height: 540px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: -7.5px;
+  left: 17.5px;
+  /* transform: translate(-50%, -50%); */
+  transition: all 0.5s ease;
+}
+.modal__frame._active {
+  top: 50%;
+}
+.modal__close--wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+.modal__close {
+  /* position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  /* align-self: end; */
+  cursor: pointer;
+}
+.modal__close::before,
+.modal__close::after {
+  display: block;
+  content: "";
+  width: 80%;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.modal__close::after {
+  transform: rotate(45deg);
+}
+.modal__close::before {
+  transform: rotate(-45deg);
+}
+.modal__title {
+  margin: 26px 0 0 0;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 58px;
+  text-align: center;
+  color: #0c0b10;
+}
+.modal__form {
+  margin: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  padding: 0 5px;
+  position: relative;
+}
+.form__input {
+  font-family: "Manrope";
+  display: block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(10px);
+  border-radius: 95px;
+  padding: 13px 20px;
+  text-align: center;
+  color: #0c0b10;
+  width: 100%;
+
+  margin-bottom: 14px;
+}
+.form__input:nth-child(2) {
+  margin-bottom: 0;
+}
+.modal__tel {
+  margin: 14px 0 0 0;
+}
+button[type="submit"].modal__btn {
+  margin: 53px 0 0 0;
+  background: #0c0b10;
+  border-radius: 74px;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 0;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.modal__form::after {
+  content: "";
+  display: block;
+  max-height: 61px;
+  width: 88%;
+  height: 100%;
+  border: 1px solid #0c0b10;
+  border-radius: 98.1972px;
+  position: absolute;
+  bottom: 0;
+}
