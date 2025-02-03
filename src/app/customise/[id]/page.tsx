@@ -1,14 +1,13 @@
 "use client"
 
 import React, { useState } from "react";
+import Image from "next/image";
 // import "../customise.scss";
 import BlackBtn from "../../components/ui/BlackBtn";
 import { Input } from "../../components/ui/Input";
 import { dataTrips } from "../../utils/data";
 import { Formik, Form } from "formik";
 import { initialValues, schemas } from "../../utils/helper";
-
-type Props = {}
 
 const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {  
 
@@ -34,9 +33,9 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 						Customise trip
 					</h1>
 					<div className="customise-page__top flex">
-						<img src="/img/customise-img/Layer 3.png" alt="layer" className="bg-top"/>
-						<img src="/img/customise-img/Subtract.png" alt="subtract" className="bg-wrapper"/>
-						<img src="/img/customise-img/Rectangle 30.png" alt="rectangle" className="bg-bottom"/>
+						<Image width={63} height={27} src="/img/customise-img/Layer 3.png" alt="layer" className="bg-top"/>
+						<Image width={358} height={79} src="/img/customise-img/Subtract.png" alt="subtract" className="bg-wrapper"/>
+						<Image width={419} height={71} src="/img/customise-img/Rectangle 30.png" alt="rectangle" className="bg-bottom"/>
 						<h2 className="forms-title">
 							Customise
 						</h2>

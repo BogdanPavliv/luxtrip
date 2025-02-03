@@ -1,15 +1,15 @@
 "use client"
 
 import React from "react";
+import Image from "next/image";
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import { CustomModal } from "../ui/CustomModal/CustomModal";
 import { RootState } from '../../store/store';
 import { openModal, closeModal } from "../../store/modalSlice";
 
-type Props = {};
 
-const Footer = (props: Props) => {
+const Footer = () => {
   const dispatch = useDispatch();
   const isModalOpen = useSelector((state: RootState) => state.modal.isModalOpen);
 
@@ -23,7 +23,9 @@ const Footer = (props: Props) => {
           <div className="footer__top">
             <div className="main__logo">
               <Link href={"/"} className="main__logo-link">
-                <img
+                <Image
+                  width={215}
+                  height={112}
                   className="main__logo-footer"
                   src="/img/header-footer/logo.svg"
                   alt="logo"

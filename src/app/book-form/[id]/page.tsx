@@ -10,8 +10,6 @@ import { dataBook } from "../../utils/data";
 import { Formik, Form } from "formik";
 import { initialValues, schemas } from "../../utils/helper";
 
-type Props = {}
-
 const BookFormPage = ({ params }: { params: Promise<{ id: string }> }) => {
   const [selectedOption1, setSelectedOption1] = useState('Choose');
   const [selectedOption2, setSelectedOption2] = useState('Adults');

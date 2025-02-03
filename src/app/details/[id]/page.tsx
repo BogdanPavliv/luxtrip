@@ -13,8 +13,6 @@ import { Input } from "../../components/ui/Input";
 import { Formik, Form } from "formik";
 import { initialValues, schemas } from "../../utils/helper";
 
-type Props = {};
-
 const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
   // Розкриваємо params за допомогою React API
@@ -158,7 +156,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                         <li>8 days / 7 nights</li>
                         <li>guided small groups</li>
                         <li>16</li>
-                        <li>level 1/4 (easy)</li>
+                        <li>level 1/4 &#40;easy&#41; </li>
                         <li>sep - mar</li>
                       </ul>
                     </div>
@@ -325,7 +323,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                     </div>
                     <div className="luxury-tour-plan__item-right">
                       <p className="luxury-tour-plan__item-text">
-                        When it’s time for your Iceland adventure to end, you will be picked up from your hotel by a shuttle bus about three hours before your flight. If you’re flying in the afternoon, you have the option to visit the Blue Lagoon geothermal spa to relax in the warm mineral waters before continuing to the airport (optional: not included). If you are interested in extending your stay, we can book extra nights and activities in the Reykjavík area or even combine this tour with a visit to one of our other Nordic destinations.
+                        When it’s time for your Iceland adventure to end, you will be picked up from your hotel by a shuttle bus about three hours before your flight. If you’re flying in the afternoon, you have the option to visit the Blue Lagoon geothermal spa to relax in the warm mineral waters before continuing to the airport &#40;optional: not included&#41;. If you are interested in extending your stay, we can book extra nights and activities in the Reykjavík area or even combine this tour with a visit to one of our other Nordic destinations.
                       </p>
                       <h6 className="luxury-tour-plan__title">Included:</h6>
                       <ul className="luxury-tour-plan__item-list">
@@ -349,7 +347,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   <h5>Included</h5>
                   <ul>
                     <li>One private transfer from Keflavík Airport to Reykjavík</li>
-                    <li>Accommodation (Comfort Plus) for 7 nights</li>
+                    <li>Accommodation &#40;Comfort Plus&#41; for 7 nights</li>
                     <li>Daily Breakfast</li>
                     <li>Three Dinners</li>
                     <li>Welcome drink on the day of arrival</li>
@@ -378,7 +376,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   <h5>Included</h5>
                   <ul>
                     <li>Flights to/from Iceland</li>
-                    <li>Meals, drinks & entrance fees (unless otherwise stated)</li>
+                    <li>Meals, drinks & entrance fees &#40;unless otherwise stated&#41; </li>
                     <li>Personal travel insurance</li>
                     <li>Any services not listed above as “Included”</li>
                   </ul>
@@ -463,8 +461,8 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
               <div className="row row-1">
                 <h3>Buy a small backpack/suitcase</h3>
                 <p>
-                    By purchasing a small backpack (I like something around 35/40
-                    liters), you will be forced you to pack light and avoid carrying
+                    By purchasing a small backpack &#40;I like something around 35/40
+                    liters&#41; , you will be forced you to pack light and avoid carrying
                     too much stuff. Humans have a natural tendency to want to fill
                     space so if you pack light but have lots of extra room in your
                     bag, you’ll end up going “well, I guess I can take more” and
@@ -496,8 +494,8 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
               <div className="row row-4">
                 <h3>Travel by yourself at least once</h3>
                 <p>
-                    By purchasing a small backpack (I like something around 35/40
-                    liters), you will be forced you to pack light and avoid carrying
+                    By purchasing a small backpack &#40;I like something around 35/40
+                    liters&#41; , you will be forced you to pack light and avoid carrying
                     too much stuff. Humans have a natural tendency to want to fill
                     space so if you pack light but have lots of extra room in your
                     bag, you’ll end up going “well, I guess I can take more” and
@@ -1076,9 +1074,9 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
                   Note: When you purchase a subscription service such as
                   PlayStation®Plus, you agree to a rolling subscription with
-                  periodic billing (e.g. annual billing). You can stop making
-                  payments at any time by turning off [Auto-renewal] (click here for
-                  more information) but, beyond the initial 14-day cancellation
+                  periodic billing &#40;e.g. annual billing&#41; . You can stop making
+                  payments at any time by turning off [Auto-renewal] &#40;click here for
+                  more information&#41; but, beyond the initial 14-day cancellation
                   period, you will not receive a refund for payments already made.
                   When you turn off [Auto-renewal], your subscription will continue
                   until the next payment is due, at which point it will end.
@@ -1091,9 +1089,9 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   <br />
                   <br />
                   To control the purchases made from the PlayStation™Store, via your
-                  account and console ensure you (i) use our password and passcode
+                  account and console ensure you &#40;i&#41; use our password and passcode
                   tools to control unauthorised log-in to and purchases via your
-                  account and (ii) if you have children, set up a separate account
+                  account and &#40;ii&#41; if you have children, set up a separate account
                   for each child and use our parental controls to limit their
                   expenditure or prevent them shopping at all.
                 </p>

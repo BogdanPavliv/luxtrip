@@ -7,9 +7,7 @@ import { dataBook } from "../utils/data";
 import SubscribeForm from "../components/ui/SubscribeForm";
 import BlackBtn from "../components/ui/BlackBtn";
 
-type Props = {}
-
-const BookWithUsPage = (props: Props) => {
+const BookWithUsPage = () => {
   return (
     <main className='main book-with-us-page-bg'>
       <section className="book-with-us">

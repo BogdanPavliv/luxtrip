@@ -8,8 +8,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { RootState } from '../../store/store';
 
-import { toggleMenu, closeMenu } from "../../store/headerSlice";
-import { openModal, closeModal } from "../../store/modalSlice";
+import { toggleMenu } from "../../store/headerSlice";
+import { openModal } from "../../store/modalSlice";
 
 type TopOfPageProps = {
   isTopOfPage: boolean;

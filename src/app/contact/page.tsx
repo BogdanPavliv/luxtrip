@@ -2,9 +2,7 @@ import React from 'react';
 import "./contact.scss"
 import Image from "next/image";
 
-type Props = {}
-
-const ContactPage = (props: Props) => {
+const ContactPage = () => {
   return (
     <main className='main contact-bg'>
         <section className="contact">
@@ -15,7 +13,7 @@ const ContactPage = (props: Props) => {
                 <div className="contact__wrapper">
                     <div className="block phone-block">
                         <span className="block__title">Phone</span>
-                        <a href="tel:410782058388" className="block__phone-number">+41 (078) 205 83 88</a>
+                        <a href="tel:410782058388" className="block__phone-number">+41 &#40;078&#41; 205 83 88</a>
                         <span className="block__subtitle">or</span>
                         <div className="block__btn call__btn-main">Call Me Back</div>
                     </div>

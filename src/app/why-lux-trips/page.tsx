@@ -10,9 +10,7 @@ import SubscribeForm from "../components/ui/SubscribeForm";
 import {dataBook} from "../utils/data";
 import {sliderLuxtripsSettings} from "../utils/common";
 
-type Props = {}
-
-const WhyLuxTripsPage = (props: Props) => {
+const WhyLuxTripsPage = () => {
   return (
     <main className='main why-lux-page-bg'>
         <section className="luxtrips-preview">
@@ -220,7 +218,7 @@ const WhyLuxTripsPage = (props: Props) => {
                     {...sliderLuxtripsSettings}
                     className="swiper-luxtrips"
                     >
-                        {dataBook.map((item, i) => (
+                        {dataBook.map((item) => (
                             <SwiperSlide key={item.id} className="luxtrips-book-slide" style={{ backgroundImage: `url('${item.image}')` }}>
                                 <Link 
                                  className="luxtrips-book-slide__link" 

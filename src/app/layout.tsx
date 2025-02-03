@@ -8,23 +8,7 @@ import Footer from "./components/footer/Footer";
 
 import StoreProvider from "./components/provirer/Provider";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
 const forum400 = Forum({
-  subsets: ["latin"],
-  weight: "400"
-});
-
-const manrope = Manrope({
   subsets: ["latin"],
   weight: "400"
 });

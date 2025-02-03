@@ -28,9 +28,7 @@ const links = [
     },
 ];
 
-type Props = {}
-
-const Links = (props: Props) => {
+const Links = () => {
   return (
     <ul className="header__navList">
         {links.map((link) => (

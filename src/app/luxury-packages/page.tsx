@@ -20,8 +20,6 @@ const manrope = Manrope({
   weight: "500",
 });
 
-type Props = {};
-
 const BREAKPOINTS = {
   desktop: 1120,
   tablet: 768,
@@ -34,7 +32,7 @@ const ITEMS_TO_SHOW = {
   mobile: 4,
 };
 
-const LuxuryPackagesPage: React.FC<Props> = () => {
+const LuxuryPackagesPage: React.FC = () => {
   const [visibleItems, setVisibleItems] = useState<number>(ITEMS_TO_SHOW.desktop);
   const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([
     new Date("2022-12-14"),
@@ -92,7 +90,7 @@ const LuxuryPackagesPage: React.FC<Props> = () => {
                   <option value="New destinations for 2022">New destinations for 2022</option>
                   <option value="Best Winter Destinations">Best Winter Destinations</option>
                   <option value="Your health is matter">Your health is matter</option>
-                  <option value="The world's most extraordinary places">The world's most extraordinary places</option>
+                  <option value="The world's most extraordinary places">The world&apos;s most extraordinary places</option>
                   <option value="Experiences Away From Crowd">Experiences Away From Crowd</option>
                 </select>
               </div>
