@@ -3,12 +3,18 @@
 import React from 'react';
 import "./why-lux-trips.scss";
 import Image from "next/image";
+import { Manrope } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from 'next/link';
 import SubscribeForm from "../components/ui/SubscribeForm";
 import {dataBook} from "../utils/data";
 import {sliderLuxtripsSettings} from "../utils/common";
+
+const manrope400 = Manrope({
+    subsets: ["latin"],
+    weight: "400"
+});
 
 const WhyLuxTripsPage = () => {
   return (
@@ -38,7 +44,7 @@ const WhyLuxTripsPage = () => {
         
                                     <div className="luxtrips-preview-card__content">
                                         <h2 className="title preview-card__title">Bespoke experience of travelling</h2>
-                                        <p className="preview-card__text">Being expert Luxury Travel Designers, Lux Trips offers
+                                        <p className={`${manrope400.className} preview-card__text`}>Being expert Luxury Travel Designers, Lux Trips offers
                                             bespoke experience of travelling.</p>
                                     </div>
                                 </li>
@@ -64,7 +70,7 @@ const WhyLuxTripsPage = () => {
                                     <div className="luxtrips-preview-card__content">
                                         <h2 className="title preview-card__title preview-card__title-center">Collecting precious
                                             moments is our utmost goal</h2>
-                                        <p className="preview-card__text preview-card__text-center">Our exclusive network of trusted
+                                        <p className={`${manrope400.className} preview-card__text preview-card__text-center`}>Our exclusive network of trusted
                                             local partners allows us to carefully curate every detail.</p>
                                     </div>
                                 </li>
@@ -88,7 +94,7 @@ const WhyLuxTripsPage = () => {
         
                                     <div className="luxtrips-preview-card__content">
                                         <h2 className="title preview-card__title">We personalize each trip</h2>
-                                        <p className="preview-card__text">Thanks to our extensive knowledge and operation in the
+                                        <p className={`${manrope400.className} preview-card__text`}>Thanks to our extensive knowledge and operation in the
                                             industry, we personalize each trip according to the needs and wishes of our clients.
                                         </p>
                                     </div>
@@ -131,7 +137,7 @@ const WhyLuxTripsPage = () => {
                     <div className="experience-box">
                         <div className="experience-box__info">
                             <h2 className="title experience__title">Creating a unique experience for each client</h2>
-                            <p className="experience__text">
+                            <p className={`${manrope400.className} experience__text`}>
                                 Starting from suggesting destinations to visit in the current season, to the selection
                                 of the most exquisite locations for a special event or a family dinner.
                             </p>
@@ -166,7 +172,7 @@ const WhyLuxTripsPage = () => {
                 <div className="luxtrips-container offers__container">
                 <h2 className="title offers__title">In Lux Trips we plan, organize and manage tailor-made itineraries
                     for our clients.</h2>
-                <p className="offers__text">
+                <p className={`${manrope400.className} offers__text`}>
                     Offering exclusive tours, exceptional accommodations and personalized journey-planning.
                 </p>
 
@@ -189,12 +195,12 @@ const WhyLuxTripsPage = () => {
                         </div>
 
                         <div className="offers-box__content">
-                            <p className="offers-box__text">
+                            <p className={`${manrope400.className} offers-box__text`}>
                                 We provide our clients with access to exclusive events and experiences, such as
                                 glamping or fishing on private islands, private vineyard wine-tasting and tours, or
                                 cruising a sea with a flock of dolphins, to name just a few.
                             </p>
-                            <p className="offers-box__text">
+                            <p className={`${manrope400.className} offers-box__text`}>
                                 Our location scouting for events and holidays encompasses diverse types of villas
                                 and chalets, luxury resorts and world-class hotels around the world.
                             </p>
@@ -242,7 +248,7 @@ const WhyLuxTripsPage = () => {
         <section className="mission">
                 <div className="luxtrips-container mission__container">
                     <div className="mission__content">
-                        <p className="mission__text">
+                        <p className={`${manrope400.className} mission__text`}>
                             As a Luxury Travel Designer, we make it our mission to transform clients’ interests and
                             dreams into one-of-a-kind travel experience through the provision of premium quality
                             services.
@@ -251,7 +257,7 @@ const WhyLuxTripsPage = () => {
                             Importantly, in Lux Trips we get to know our clients personally, and hence, we get to have a
                             relationship with each of them.
                         </h2>
-                        <p className="mission__text">
+                        <p className={`${manrope400.className} mission__text`}>
                             We construct long-lasting connections thanks to the unforgettable trips we design, as we
                             believe that travel is all about feelings, and memories are the most precious gifts we want
                             our customer to bring back with them.

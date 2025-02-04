@@ -22,7 +22,17 @@ import {dataReviews} from "./utils/data";
 import {sliderTripsSettings} from "./utils/common";
 import {sliderReviewsSettings} from "./utils/common";
 
-const manrope = Manrope({
+const manrope300 = Manrope({
+  subsets: ["latin"],
+  weight: "300"
+});
+
+const manrope400 = Manrope({
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const manrope500 = Manrope({
   subsets: ["latin"],
   weight: "500"
 });
@@ -114,11 +124,11 @@ const Home = () => {
                   <form action="#" className="main-form__form">
                   <label className="main-form__label" htmlFor="Destination">
                     <span className="main-form__label-text main-form__label-text_01">Destination</span>
-                    <input className={`${manrope.className} main-form__label-input`} id="Destination" name="place" type="text"  minLength={2} maxLength={30} placeholder="Where are you going?" required />
+                    <input className={`${manrope500.className} main-form__label-input`} id="Destination" name="place" type="text"  minLength={2} maxLength={30} placeholder="Where are you going?" required />
                   </label>
                   <label className="main-form__label" htmlFor="travel-type">
                     <span className="main-form__label-text main-form__label-text_02">Travel type</span>
-                    <select value={selectedOption1} onChange={(e) => setSelectedOption1(e.target.value)} className={`${manrope.className} main-form__label-select`} name="travel-type" id="travel-type">
+                    <select value={selectedOption1} onChange={(e) => setSelectedOption1(e.target.value)} className={`${manrope500.className} main-form__label-select`} name="travel-type" id="travel-type">
                       <option value="1 Adventure Travel">1 Adventure Travel</option>
                       <option value="2 Adventure Travel">2 Adventure Travel</option>
                       <option value="3 Adventure Travel">3 Adventure Travel</option>
@@ -127,11 +137,11 @@ const Home = () => {
                   </label>
                   <label className="main-form__label" htmlFor="date">
                     <span className="main-form__label-text main-form__label-text_03">When</span>
-                    <input className={`${manrope.className} main-form__label-input`} name="date" id="date" type="date" required />
+                    <input className={`${manrope500.className} main-form__label-input`} name="date" id="date" type="date" required />
                   </label>
                   <label className="main-form__label" htmlFor="Travellers">
                     <span className="main-form__label-text main-form__label-text_04">Travellers</span>
-                    <select value={selectedOption2} onChange={(e) => setSelectedOption2(e.target.value)} className={`${manrope.className} main-form__label-select`} name="Travellers" id="Travellers">
+                    <select value={selectedOption2} onChange={(e) => setSelectedOption2(e.target.value)} className={`${manrope500.className} main-form__label-select`} name="Travellers" id="Travellers">
                       <option value="1 Person">1 Person</option>
                       <option value="2 Persons">2 Persons</option>
                       <option value="3 Persons">3 Persons</option>
@@ -179,18 +189,18 @@ const Home = () => {
                         <Image src={item.image} width={350} height={570} alt="card" />
                         <div className="trip-card__info">
                           <div className="trip-card__about">
-                            <div className={`${manrope.className} trip-card__place text_h2`}>{item.place}</div>
+                            <div className={`${manrope500.className} trip-card__place text_h2`}>{item.place}</div>
                             <Link href={`/customise/${item.id}`} className="trip-card__name title_h5">{item.text}</Link>
                             <div className="trip-card__bottom">
                               <div className="trip-card__price">
-                                <b className={`${manrope.className} text_h2`}>From</b>
+                                <b className={`${manrope500.className} text_h2`}>From</b>
                                 <div className="trip-carddivice-price text_h3">€ <output>{item.price}</output></div>
                               </div>
                               <Link href={`/customise/${item.id}`} className="trip-card__customise text_h4">customise </Link>
                             </div>
                           </div>
                           <div className="trip-card__rating">
-                            <div className={`${manrope.className} trip-card__rating-rating text_h2`}>{item.rating}.0</div>
+                            <div className={`${manrope500.className} trip-card__rating-rating text_h2`}>{item.rating}.0</div>
                             <div className="trip-card__rating-scale">
                               {Array.from({ length: 5 }, (_, index) => (
                                 <div 
@@ -361,7 +371,7 @@ const Home = () => {
                   </div>
                   <div className="why__content">
                     <div className="why__content-text01 text_h6">Exclusive knowledge to provide the best of the best to clients</div>
-                    <div className="why__content-text02 text_h5">Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </div>
+                    <div className={`${manrope400.className} why__content-text02 text_h5`}>Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </div>
                     <div className="why__content-pic">
                       <div className="why__parallax-icon-wrapper">
                         <Image src="/img/section-extraordinary/why04.jpg" alt="why lux" width={245} height={545} />
@@ -382,17 +392,17 @@ const Home = () => {
                   <div className="customise__item">
                     <div className="customise__item-romb">1</div>
                     <div className="customise__item-title">Describe your dream trip</div>
-                    <p className="customise__item-text text_h5">Let us know what your perfect vacation is. Destinations, preferences, and personal interests.</p>
+                    <p className={`${manrope400.className} customise__item-text text_h5`}>Let us know what your perfect vacation is. Destinations, preferences, and personal interests.</p>
                   </div>
                   <div className="customise__item">
                     <div className="customise__item-romb">2</div>
                     <div className="customise__item-title">Get matched</div>
-                    <p className="customise__item-text text_h5">Our team connects you with up to two vetted travel specialists, who will compete for your business.</p>
+                    <p className={`${manrope400.className} customise__item-text text_h5`}>Our team connects you with up to two vetted travel specialists, who will compete for your business.</p>
                   </div>
                   <div className="customise__item">
                     <div className="customise__item-romb">3</div>
                     <div className="customise__item-title">Book your vacation</div>
-                    <p className="customise__item-text text_h5">Get your itinerary customized to fit your needs and preferences. book only when you’re happy with the travel specialist and the itinerary.</p>
+                    <p className={`${manrope400.className} customise__item-text text_h5`}>Get your itinerary customized to fit your needs and preferences. book only when you’re happy with the travel specialist and the itinerary.</p>
                   </div>
                   <div className="customise__link">
                     <a href="#" className="customise__link-link btn__decor btn__decor_b"><span>Start a trip request</span></a>
@@ -437,10 +447,10 @@ const Home = () => {
                             <div className="review__wrapper-img">
                               <Image src={item.image} alt="customer" width={100} height={100} />
                             </div>
-                            <p className="review__wrapper-text text_h1">{item.text}</p>
+                            <p className={`${manrope400.className} review__wrapper-text text_h1`}>{item.text}</p>
                             <div className="review__wrapper-wrapper">
-                              <div className="review__wrapper-name">{item.name}</div>
-                              <div className="review__wrapper-place">{item.place}</div>
+                              <div className={`${manrope500.className} review__wrapper-name`}>{item.name}</div>
+                              <div className={`${manrope300.className} review__wrapper-place`}>{item.place}</div>
                             </div>
                           </fieldset>
                         </fieldset>

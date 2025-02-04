@@ -2,7 +2,18 @@
 
 import React, { useState } from 'react';
 import './client-area.scss';
+import { Manrope } from "next/font/google";
 import Image from "next/image";
+
+const manrope400 = Manrope({
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const manrope500 = Manrope({
+  subsets: ["latin"],
+  weight: "500"
+});
 
 type Tab = 'tab-1' | 'tab-2' | 'tab-3' | 'tab-4' | 'tab-5';
 
@@ -37,7 +48,7 @@ const ClientAreaPage: React.FC = () => {
                   return (
                     <button
                       key={tabId}
-                      className={`client-area__btn ${activeTab === tabId ? 'active-tab' : ''}`}
+                      className={`${manrope400.className} client-area__btn ${activeTab === tabId ? 'active-tab' : ''}`}
                       type="button"
                       onClick={() => handleTabClick(tabId)}
                     >
@@ -55,15 +66,15 @@ const ClientAreaPage: React.FC = () => {
                 (label, index) => (
                   <div key={index} className="client-area__list">
                     <form className="client-area__form">
-                      <p className="client-area__text">{label}</p>
+                      <p className={`${manrope400.className} client-area__text`}>{label}</p>
                       <input
                         name={label.toLowerCase().replace(/\s/g, '-')}
                         type="text"
-                        className="client-area__input"
+                        className={`${manrope500.className} client-area__input`}
                         placeholder={`Enter your ${label.toLowerCase()}`}
                       />
                     </form>
-                    <label htmlFor={label.toLowerCase()} className="client-area__label">
+                    <label htmlFor={label.toLowerCase()} className={`${manrope500.className} client-area__label`}>
                       Edit
                     </label>
                   </div>
@@ -75,19 +86,19 @@ const ClientAreaPage: React.FC = () => {
               {/* Tab 2 Content */}
               <div className="client-area__list another">
                   <form className="client-area__form">
-                      <p className="client-area__text">Currency</p>
-                      <input type="text" id="currency" className="client-area__input" placeholder="PLN Polish Zloty" />
+                      <p className={`${manrope400.className} client-area__text`}>Currency</p>
+                      <input type="text" id="currency" className={`${manrope400.className} client-area__input`} placeholder="PLN Polish Zloty" />
                   </form>
-                  <label htmlFor="currency" className="client-area__label">
+                  <label htmlFor="currency" className={`${manrope500.className} client-area__label`}>
                     Edit
                   </label>
               </div>
               <div className="client-area__list another">
                   <form className="client-area__form">
-                      <p className="client-area__text">Language</p>
-                      <input type="text" id="language" className="client-area__input" placeholder="American English"/>
+                      <p className={`${manrope400.className} client-area__text`}>Language</p>
+                      <input type="text" id="language" className={`${manrope400.className} client-area__input`} placeholder="American English"/>
                   </form>
-                  <label htmlFor="language" className="client-area__label">
+                  <label htmlFor="language" className={`${manrope500.className} client-area__label`}>
                       Edit
                   </label>
               </div>
@@ -97,8 +108,8 @@ const ClientAreaPage: React.FC = () => {
               {/* Tab 3 Content */}
               <div className="client-area__list ">
                   <form className="client-area__form">
-                      <p className="client-area__text">Payment cards</p>
-                      <input type="number" id="card" className="client-area__input null" placeholder="Pay with new card"/>
+                      <p className={`${manrope400.className} client-area__text`}>Payment cards</p>
+                      <input type="number" id="card" className={`${manrope400.className} client-area__input`} placeholder="Pay with new card"/>
                   </form>
                   <label htmlFor="card" className="client-area__label">
                       Edit
@@ -156,12 +167,12 @@ const ClientAreaPage: React.FC = () => {
                     onChange={(e) => handleFileChange(e, 'field__file-1')}
                   />
                   <label className="client-area__file-wrapper" htmlFor="field__file-1">
-                    <div className="client-area__file-fake">
+                    <div className={`${manrope400.className} client-area__file-fake`}>
                       {fileUploads['field__file-1']
                         ? `Selected files: ${fileUploads['field__file-1']}`
                         : 'No file chosen'}
                     </div>
-                    <div className="client-area__file-button">Choose</div>
+                    <div className={`${manrope500.className} client-area__file-button`}>Choose</div>
                   </label>
                 </div>
               </div>

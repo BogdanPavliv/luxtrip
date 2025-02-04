@@ -3,9 +3,15 @@
 import React from 'react';
 import "./book-with-us.scss";
 import Link from 'next/link';
+import { Manrope } from "next/font/google";
 import { dataBook } from "../utils/data";
 import SubscribeForm from "../components/ui/SubscribeForm";
 import BlackBtn from "../components/ui/BlackBtn";
+
+const manrope400 = Manrope({
+  subsets: ["latin"],
+  weight: "400"
+});
 
 const BookWithUsPage = () => {
   return (
@@ -29,7 +35,7 @@ const BookWithUsPage = () => {
                         <h2 className="card__title">{item.title}</h2>
                       </div>
                       <div className="card__content">
-                        <p className="card__descr">
+                        <p className={`${manrope400.className} card__descr`}>
                           {item.text}
                         </p>
                         <BlackBtn>Make A Request</BlackBtn>

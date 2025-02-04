@@ -2,12 +2,18 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { Manrope } from "next/font/google";
 // import "../customise.scss";
 import BlackBtn from "../../components/ui/BlackBtn";
 import { Input } from "../../components/ui/Input";
 import { dataTrips } from "../../utils/data";
 import { Formik, Form } from "formik";
 import { initialValues, schemas } from "../../utils/helper";
+
+const manrope500 = Manrope({
+	subsets: ["latin"],
+	weight: "500"
+});
 
 const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {  
 
@@ -52,7 +58,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Location from
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md romb" name="country" id="location1">
+										<select className={`${manrope500.className} customise-page__select-md romb`} name="country" id="location1">
 											<option value="Choose">Choose</option>
 											<option value="Ankara">Ankara</option>
 											<option value="Moscow">Moscow</option>
@@ -65,7 +71,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										to
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select value={selectedOption1} onChange={(e) => setSelectedOption1(e.target.value)} className="customise-page__select-md romb" name="country" id="location2">
+										<select value={selectedOption1} onChange={(e) => setSelectedOption1(e.target.value)} className={`${manrope500.className} customise-page__select-md romb`} name="country" id="location2">
 											<option value="Austria">Austria</option>
 											<option value="Peru">Peru</option>
 											<option value="Croatia">Croatia</option>
@@ -81,7 +87,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Dates
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md calendar" name="date" id='date1'>
+										<select className={`${manrope500.className} customise-page__select-md calendar`} name="date" id='date1'>
 											<option value="date-1">14-04-22</option>
 											<option value="date-2">18-04-22</option>
 										</select>
@@ -92,7 +98,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										<span className="span-wrapper"></span>
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md calendar" name="date" id='date-end'>
+										<select className={`${manrope500.className} customise-page__select-md calendar`} name="date" id='date-end'>
 											<option value="date-3">26-04-22</option>
 											<option value="date-4">28-04-22</option>
 										</select>
@@ -104,7 +110,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 									Model of supercar
 								</label>
 								<div className="customise-page__select--wrapper">
-									<select className="customise-page__select-lg" name="model-of-car" id='cars'>
+									<select className={`${manrope500.className} customise-page__select-lg`} name="model-of-car" id='cars'>
 										<option value="Surprise me">Surprise me</option>
 										<option value="Lamborgini">Lamborgini</option>
 										<option value="Bentley">Bentley</option>
@@ -119,7 +125,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Pick-up location
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md-2 romb"  name="pick-up">
+										<select className={`${manrope500.className} customise-page__select-md-2 romb`} name="pick-up">
 											<option value="Choose">Choose</option>
 											<option value="Italy">Italy</option>
 											<option value="France">France</option>
@@ -132,7 +138,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Pick up time
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-sm" name="pick-up-time">
+										<select className={`${manrope500.className} customise-page__select-sm`} name="pick-up-time">
 											<option value="09.00">09.00</option>
 											<option value="10.00">10.00</option>
 											<option value="11.00">11.00</option>
@@ -151,7 +157,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Drop off location
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md-2 romb" name="pick-up" id="pick-up">
+										<select className={`${manrope500.className} customise-page__select-md-2 romb`} name="pick-up" id="pick-up">
 											<option value="Choose">Choose</option>
 											<option value="Pome">Pome</option>
 											<option value="Paris">Paris</option>
@@ -164,7 +170,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Pick up time
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-sm" name="pick-up-time" id='pick-up-time'>
+										<select className={`${manrope500.className} customise-page__select-sm`} name="pick-up-time" id='pick-up-time'>
 											<option value="09.00">10.00</option>
 											<option value="10.00">10.00</option>
 											<option value="11.00">11.00</option>
@@ -183,7 +189,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 										Number of people
 									</label>
 									<div className="customise-page__select--wrapper">
-										<select className="customise-page__select-md-3" name="number-people">
+										<select className={`${manrope500.className} customise-page__select-md-3`} name="number-people">
 											<option value="2">2</option>
 											<option value="3">3</option>
 											<option value="4">4</option>
@@ -198,7 +204,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 									</label>
 									<label className="switch" id='driver'>
 										<input type="checkbox"/>
-										<div className="switcher round">  
+										<div className={`${manrope500.className} switcher round`}>  
 											<div className='switch-item yes'>Yes</div>
 											<div className='switch-item no'>No</div> 
 										</div>
@@ -217,7 +223,7 @@ const CustomisePage = ({ params }: { params: Promise<{ id: string }> }) => {
 							/>
 							<div className="customise-page__column direction-column">
 								<label className="customise-page__label" htmlFor="textarea">Special requests</label>
-								<textarea id='textarea' className="customise-page__text-area"></textarea>
+								<textarea id='textarea' className={`${manrope500.className} customise-page__text-area`}></textarea>
 							</div>
 							<div className="customise-page__img" style={{ backgroundImage: `url('${customise.image}')` }}>
 								<p className="customise-page__img-text">

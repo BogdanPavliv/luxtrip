@@ -3,6 +3,7 @@
 import React from 'react';
 import "../details.scss";
 import Image from "next/image";
+import { Manrope } from "next/font/google";
 import SubscribeForm from "../../components/ui/SubscribeForm";
 import WhiteBtn from "../../components/ui/WhiteBtn";
 import BlackBtn from "../../components/ui/BlackBtn";
@@ -12,6 +13,26 @@ import { dataTrips } from "../../utils/data";
 import { Input } from "../../components/ui/Input";
 import { Formik, Form } from "formik";
 import { initialValues, schemas } from "../../utils/helper";
+
+const manrope300 = Manrope({
+  subsets: ["latin"],
+  weight: "300"
+});
+
+const manrope400 = Manrope({
+  subsets: ["latin"],
+  weight: "400"
+});
+
+const manrope500 = Manrope({
+  subsets: ["latin"],
+  weight: "500"
+});
+
+const manrope600 = Manrope({
+  subsets: ["latin"],
+  weight: "600"
+});
 
 const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
@@ -127,7 +148,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
       </section>
       <section className="information">
           <div className="container">
-            <div className="information__grid">
+            <div className="information__inner">
               <div className="col-1">
                 <div  className="main-slider__slider-item slider-item">
                   <div className="trip-card" id="trip01">
@@ -142,7 +163,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                 <div className="col-1">
                   <h2>{details.text}</h2>
                   <div className="info">
-                    <div className="col-1">
+                    <div className={`${manrope600.className} col-1`}>
                       <ul>
                         <li>duration</li>
                         <li>travel style</li>
@@ -151,7 +172,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                         <li>season</li>
                       </ul>
                     </div>
-                    <div className="col-2">
+                    <div className={`${manrope400.className} col-2`}>
                       <ul>
                         <li>8 days / 7 nights</li>
                         <li>guided small groups</li>
@@ -162,7 +183,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                     </div>
                   </div>
                 </div>
-                <div className="col-2 list">
+                <div className={`${manrope400.className} col-2 list`}>
                   <h6>tour highlights</h6>
                   <ul>
                     <li>Watch the northern lights dance and flicker in the sky</li>
@@ -226,14 +247,14 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                       </h3>
                     </div>
                     <div className="luxury-tour-plan__item-right">
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         On arrival at Keflavik International Airport, you will be greeted by a driver who will transfer you to your hotel in the city centre of Reykjavík. After settling in, the rest of the day is free for you to explore the vibrant capital city with its abundance of museums, restaurants and bars to suit all tastes. If you&apos;re interested in checking out Icelandic design or experiencing the city&apos;s thriving coffee culture, head to the main street, Laugavegur, and enjoy its various shops and cosy cafes.
                       </p>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         At 18:00, you will meet your group and guide for a welcome drink and a short introduction about the itinerary and some useful information about the coming days. Spend the night at Center Hotel Laugavegur or similar. For those arriving early today you have the option to upgrade your journey from the airport with a visit to the Blue Lagoon geothermal spa before heading to the city. It´s the perfect way to start your Iceland adventure!
                       </p>
-                      <h6 className="luxury-tour-plan__title">Included:</h6>
-                      <ul className="luxury-tour-plan__item-list">
+                      <h6 className={`${manrope600.className} luxury-tour-plan__title`}>Included:</h6>
+                      <ul className={`${manrope400.className} luxury-tour-plan__item-list`}>
                         <li className="luxury-tour-plan__item-item">
                           Private meet and greet airport transfer on arrival
                         </li>
@@ -241,7 +262,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                           Welcome drink and group information meeting with your guide
                         </li>
                       </ul>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Average Driving Distance: 49 km / 30 mi.
                         Average Travel & Exploring Duration: 50 Minutes
                       </p>
@@ -254,14 +275,14 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                       </h3>
                     </div>
                     <div className="luxury-tour-plan__item-right">
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         This morning your guide will pick you and your fellow travellers up at the hotel. The first leg of the journey takes you around the famous Golden Circle, a popular route containing some of the best-known natural sites in Iceland. Highlights include Þingvellir National Park, a UNESCO heritage site; the Geysir geothermal hot spring area and the powerful Gullfoss waterfall.
                       </p>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         The tour will also visit the geothermally-heated greenhouses at the Friðheimar tomato farm, where we will get to taste the fresh tomato products. Spend the night at Hótel Selfoss or similar.
                       </p>
-                      <h6 className="luxury-tour-plan__title">Included:</h6>
-                      <ul className="luxury-tour-plan__item-list">
+                      <h6 className={`${manrope600.className} luxury-tour-plan__title`}>Included:</h6>
+                      <ul className={`${manrope400.className} luxury-tour-plan__item-list`}>
                         <li className="luxury-tour-plan__item-item">
                           Visit to the Friðheimar Tomato Farm Greenhouse
                         </li>
@@ -272,7 +293,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                       <p className="luxury-tour-plan__item-notice">
                         *Please note that the northern lights are a natural phenomenon. If weather conditions and visibility are not favourable, the guide will inform you about the matter.
                       </p>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Average Driving Distance: 49 km / 30 mi.
                         Average Travel & Exploring Duration: 50 Minutes
                       </p>
@@ -285,17 +306,17 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                       </h3>
                     </div>
                     <div className="luxury-tour-plan__item-right">
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Today you will explore majestic waterfalls, black sand beaches and learn about the unique geology of Iceland. You will start with a visit to the Lava Centre, a one of a kind interactive exhibition about Iceland’s volcanic activity, its frequent earthquakes and how Iceland evolved over millions of years. Next up is the fairy tale-like Seljalandsfoss waterfall, where you can walk behind the icy cascade on a footpath.
                       </p>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Close by your guide will take you to Skógarfoss, an empressive 60-metre high waterfall located at the foot of a mountain range, followed by a visit to the Skógar Folk Museum. The last stop before continuing to your accommodation is at the black sand volcanic beach near the village of Vík í Mýrdal. Here, you will be able to see the spectacular rock arch and steep cliffs of along with the Reynisdrangar basalt columns just off the shore.
                       </p>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Next, you will travel to your carefully selected charming boutique hotel, situated far from the city lights to give you the best chance of seeing the northern lights. Enjoy dinner at Magma Hotel with the group. Spend the night at the Magma Hotel.
                       </p>
-                      <h6 className="luxury-tour-plan__title">Included:</h6>
-                      <ul className="luxury-tour-plan__item-list">
+                      <h6 className={`${manrope600.className} luxury-tour-plan__title`}>Included:</h6>
+                      <ul className={`${manrope400.className} luxury-tour-plan__item-list`}>
                         <li className="luxury-tour-plan__item-item">
                           Entrance fee to the Lava Center
                         </li>
@@ -309,7 +330,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                           Dinner at Magma Hotel
                         </li>
                       </ul>
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Average Driving Distance: 49 km / 30 mi.
                         Average Travel & Exploring Duration: 50 Minutes
                       </p>
@@ -322,11 +343,11 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                       </h3>
                     </div>
                     <div className="luxury-tour-plan__item-right">
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         When it’s time for your Iceland adventure to end, you will be picked up from your hotel by a shuttle bus about three hours before your flight. If you’re flying in the afternoon, you have the option to visit the Blue Lagoon geothermal spa to relax in the warm mineral waters before continuing to the airport &#40;optional: not included&#41; . If you are interested in extending your stay, we can book extra nights and activities in the Reykjavík area or even combine this tour with a visit to one of our other Nordic destinations.
                       </p>
-                      <h6 className="luxury-tour-plan__title">Included:</h6>
-                      <ul className="luxury-tour-plan__item-list">
+                      <h6 className={`${manrope600.className} luxury-tour-plan__title`}>Included:</h6>
+                      <ul className={`${manrope400.className} luxury-tour-plan__item-list`}>
                         <li className="luxury-tour-plan__item-item">
                           Breakfast: Continental Breakfast Buffet at the Hotel
                         </li>
@@ -335,7 +356,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                         </li>
                       </ul>
 
-                      <p className="luxury-tour-plan__item-text">
+                      <p className={`${manrope400.className} luxury-tour-plan__item-text`}>
                         Average Driving Distance: 49 km / 30 mi.
                         Average Travel & Exploring Duration: 50 Minutes
                       </p>
@@ -345,7 +366,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
                 <div className="included-section list">
                   <h5>Included</h5>
-                  <ul>
+                  <ul className={`${manrope400.className}`}>
                     <li>One private transfer from Keflavík Airport to Reykjavík</li>
                     <li>Accommodation &#40;Comfort Plus&#41; for 7 nights</li>
                     <li>Daily Breakfast</li>
@@ -374,7 +395,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
                 <div className="included-section list">
                   <h5>Included</h5>
-                  <ul>
+                  <ul className={`${manrope400.className}`}>
                     <li>Flights to/from Iceland</li>
                     <li>Meals, drinks & entrance fees &#40;unless otherwise stated&#41; </li>
                     <li>Personal travel insurance</li>
@@ -384,7 +405,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
 
                 <div className="extras-section list">
                   <h5>Optional Extras</h5>
-                  <ul>
+                  <ul className={`${manrope400.className}`}>
                     <li>Extras</li>
                     <li>Cancellation Insurance</li>
                   </ul>
@@ -394,13 +415,13 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   
                   <BlackBtn>download pdf</BlackBtn>
                 
-                  <p>
+                  <p className={`${manrope400.className}`}>
                     Whatever your needs, we are here to help. If you have any
                     questions about our packages and services, or if you want
                     customised privately guided tours, please do not hesitate to
                     contact us.
                   </p>
-                  <p>
+                  <p className={`${manrope400.className}`}>
                     Lux Trips | Tel: +41 78 205 83 88 | info@luxtrips.co |
                     www.luxtrips.co
                   </p>
@@ -427,7 +448,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
       <div className="container">
             <div id="location" className="section location__inner">
               <h2>Location</h2>
-              <p>
+              <p className={`${manrope400.className}`}>
                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
                 Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
                 aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
@@ -460,7 +481,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
             <div className="section-wrapper">
               <div className="row row-1">
                 <h3>Buy a small backpack/suitcase</h3>
-                <p>
+                <p className={`${manrope400.className}`}>
                     By purchasing a small backpack &#40;I like something around 35/40
                     liters&#41; , you will be forced you to pack light and avoid carrying
                     too much stuff. Humans have a natural tendency to want to fill
@@ -472,7 +493,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
               <hr />
               <div className="row row-2">
                 <h3>But take extra socks</h3>
-                <p>
+                <p className={`${manrope400.className}`}>
                     You’ll lose a bunch to laundry gremlins, wear and tear, and
                     hiking so packing extra will come in handy. I only take a few
                     more than I need. Nothing beats a fresh pair of socks!
@@ -481,7 +502,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
               <hr />
               <div className="row row-3">
                 <h3>Take an extra bank card and credit card with you</h3>
-                <p>
+                <p className={`${manrope400.className}`}>
                     Disasters happen. It’s always good to have a backup in case you
                     get robbed or lose a card. You don’t want to be stuck somewhere
                     new without access to your funds. I once had a card duplicated
@@ -493,7 +514,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
               <hr />
               <div className="row row-4">
                 <h3>Travel by yourself at least once</h3>
-                <p>
+                <p className={`${manrope400.className}`}>
                     By purchasing a small backpack &#40;I like something around 35/40
                     liters&#41; , you will be forced you to pack light and avoid carrying
                     too much stuff. Humans have a natural tendency to want to fill
@@ -658,15 +679,15 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   </svg>
                 </div>
               </div>
-              <div className="card card-1">
+              <div className="card-review card-1">
                 <div className="col col-1">
-                  <p>
+                  <p className={`${manrope400.className} col-2`}>
                     “Well organized trip, All arranged well by Arooz. Special thanks
                     to Aijaz Bhai for the service and support given to us, all
                     explained well and take us to all places as per our wish. It was
                     a wonderful experience .... Thank you team”
                   </p>
-                  <p>Eduard Hand<br /><span>Oct 15, 2021 at 8:27 am</span></p>
+                  <p className={`${manrope500.className} col-2`}>Eduard Hand<br /><span className={`${manrope300.className} col-2`}>Oct 15, 2021 at 8:27 am</span></p>
                 </div>
                 <div className="col-2">
                   <div className="container-snakes-rhomb rhomb-small">
@@ -745,14 +766,14 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   </div>
                 </div>
               </div>
-              <div className="card card-2">
+              <div className="card-review card-2">
                 <div className="col col-1">
-                  <p>
+                  <p className={`${manrope400.className} col-2`}> 
                     “Well organized trip, All arranged well by Arooz. Special thanks
                     to Aijaz Bhai for the service and support given to us, all
                     explained well and take us to .
                   </p>
-                  <p>Brandon Mango<br /><span>Oct 12, 2021 at 8:27 am</span></p>
+                  <p className={`${manrope500.className} col-2`}>Brandon Mango<br /><span className={`${manrope300.className} col-2`}>Oct 12, 2021 at 8:27 am</span></p>
                 </div>
                 <div className="col-2">
                 <div className="container-snakes-rhomb rhomb-small">
@@ -831,14 +852,14 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   </div>
                 </div>
               </div>
-              <div className="card card-3">
+              <div className="card-review card-3">
                 <div className="col col-1">
-                  <p>
+                  <p className={`${manrope400.className} col-2`}>
                     Aijaz Bhai for the service and support given to us, all
                     explained well and take us to all places as per our wish. It was
                     a wonderful experience .... Thank you team”
                   </p>
-                  <p>Maren Westervelt<br /><span>Oct 02, 2021 at 8:27 am</span></p>
+                  <p className={`${manrope500.className} col-2`}>Maren Westervelt<br /><span className={`${manrope300.className} col-2`}>Oct 02, 2021 at 8:27 am</span></p>
                 </div>
                 <div className="col-2">
                 <div className="container-snakes-rhomb rhomb-small">
@@ -1053,7 +1074,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   You can cancel your purchase of a subscription service and request
                   a refund within 14 days from the initial transaction date.
                 </p>
-                <p className='cancellation-policy__text'>
+                <p className={`${manrope400.className}`}>
                   The refund may be reduced pro-rata to reflect the use you have had
                   of the service. This may show as two transactions in your account
                   transaction history: a refund to your wallet of the full amount
@@ -1082,7 +1103,7 @@ const Details = ({ params }: { params: Promise<{ id: string }> }) => {
                   until the next payment is due, at which point it will end.
                 </p>
                 <h3>Further Information</h3>
-                <p className='cancellation-policy__text'>
+                <p className={`${manrope400.className}`}>
                   We recommend that you take care when you top up your wallet or
                   make a purchase on PlayStation™Store. A number of account features
                   are available so you can keep track of your account activity.
