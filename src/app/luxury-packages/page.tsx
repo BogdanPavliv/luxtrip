@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useCallback } from "react";
+import PageTransition from "../components/general/PageTransition";
 import "./luxury-packages.scss";
 import Image from "next/image";
 import Link from 'next/link';
@@ -252,4 +253,4 @@ const LuxuryPackagesPage: React.FC = () => {
   );
 };
 
-export default LuxuryPackagesPage;
+export default PageTransition(LuxuryPackagesPage);

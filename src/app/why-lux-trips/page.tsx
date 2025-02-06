@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import PageTransition from "../components/general/PageTransition";
 import "./why-lux-trips.scss";
 import Image from "next/image";
 import { Manrope } from "next/font/google";
@@ -273,4 +274,4 @@ const WhyLuxTripsPage = () => {
   );
 }
 
-export default WhyLuxTripsPage;
+export default PageTransition(WhyLuxTripsPage);

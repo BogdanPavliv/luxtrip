@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import PageTransition from "../components/general/PageTransition";
 import './client-area.scss';
 import { Manrope } from "next/font/google";
 import Image from "next/image";
@@ -184,4 +185,4 @@ const ClientAreaPage: React.FC = () => {
   );
 };
 
-export default ClientAreaPage;
+export default PageTransition(ClientAreaPage);

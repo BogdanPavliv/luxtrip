@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
+import PageTransition from "./components/general/PageTransition";
 import Image from "next/image";
 import Link from 'next/link';
 import { dataBook } from "./utils/data";
@@ -494,4 +495,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default PageTransition(Home);

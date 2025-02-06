@@ -1,4 +1,7 @@
+"use client";
+
 import React from 'react';
+import PageTransition from "../components/general/PageTransition";
 import "./contact.scss"
 import { Manrope } from "next/font/google";
 import Image from "next/image";
@@ -42,4 +45,4 @@ const ContactPage = () => {
   );
 }
 
-export default ContactPage;
+export default PageTransition(ContactPage);

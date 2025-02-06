@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import PageTransition from "../components/general/PageTransition";
 import "./book-with-us.scss";
 import Link from 'next/link';
 import { Manrope } from "next/font/google";
@@ -52,4 +53,4 @@ const BookWithUsPage = () => {
   )
 }
 
-export default BookWithUsPage;
+export default PageTransition(BookWithUsPage);
