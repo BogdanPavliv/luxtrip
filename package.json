@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.4.0",
+    "@studio-freight/react-lenis": "^0.0.47",
     "formik": "^2.4.6",
     "next": "^15.1.6",
     "react": "^18.2.0",
