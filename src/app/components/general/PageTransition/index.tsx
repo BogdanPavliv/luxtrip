@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const PageTransition = (OgComponent: any) => {
+const PageTransition = (OgComponent: React.FC) => {
   // eslint-disable-next-line react/display-name
   return () => (
     <>
