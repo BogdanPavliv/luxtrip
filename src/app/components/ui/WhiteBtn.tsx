@@ -1,9 +1,4 @@
-import React, {ReactNode} from 'react';
-
-type WhiteBtnProps = {
-    children: ReactNode;
-    loadMoreItems?: () => void;
-}
+import { WhiteBtnProps } from '../../types/others';
 
 const WhiteBtn: React.FC<WhiteBtnProps> = ({children, loadMoreItems}) => {
   return (

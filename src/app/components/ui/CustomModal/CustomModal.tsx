@@ -1,16 +1,10 @@
 "use client";
-
-import React, { ReactNode } from "react";
+import React from "react";
 import Modal from "react-modal";
 import "./CustomModal.scss";
+import { CustomModalProps } from "../../../types/others";
 
-type Props = {
-  children: ReactNode;
-  isOpen: boolean;
-  closeModal: () => void; // Приймаємо функцію, яка вже обгорнута в dispatch
-};
-
-export const CustomModal: React.FC<Props> = ({ isOpen, closeModal, children }) => {
+export const CustomModal: React.FC<CustomModalProps> = ({ isOpen, closeModal, children }) => {
   return (
     <Modal
       isOpen={isOpen}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import {Category} from "../../utils/data"
+import { Category } from "../../types/others";
 
 interface FilterComponentProps {
     onFilterChange: (category: Category) => void;

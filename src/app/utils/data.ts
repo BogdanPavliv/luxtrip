@@ -1,25 +1,7 @@
-export type Category = 'World' | 'Africa' | 'Asia' | 'Europe' | 'North America' | 'South America' | 'Antarctica' | 'Australia';
-
-interface Images {
-  image: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  image5: string;
-  image6: string;
-}
-
-interface Trip {
-  id: number;
-  place: string;
-  text: string;
-  image: string;
-  imageWide: string;
-  price: number;
-  category: Category;
-  rating: number;
-  images: Images;
-}
+import { Trip } from "../types/others";
+import { Review } from "../types/others";
+import { Luxtrip } from "../types/others";
+import { Book } from "../types/others";
 
 export const dataTrips: Trip[] = [
   { 
@@ -672,14 +654,6 @@ export const dataTrips: Trip[] = [
   },
 ];
 
-interface Review {
-  id: number;
-  name: string;
-  text: string;
-  image: string;
-  place: string
-}
-
 export const dataReviews: Review[] = [
   { 
     id: 1, 
@@ -718,12 +692,6 @@ export const dataReviews: Review[] = [
   }
 ];
 
-interface Luxtrip {
-  id: number;
-  title: string;
-  image: string;
-}
-
 export const dataLuxtrips: Luxtrip[] = [
   { 
     id: 1, 
@@ -756,19 +724,6 @@ export const dataLuxtrips: Luxtrip[] = [
     image: "/img/why-lux-trips/img/book-jet.webp",
   }
 ];
-
-interface Info {
-  title: string;
-  text: string;
-}
-
-interface Book {
-  id: number;
-  title: string;
-  text: string;
-  image: string;
-  info: Info;
-}
 
 export const dataBook: Book[] = [
   { 
@@ -844,4 +799,3 @@ export const dataBook: Book[] = [
     }
   },
 ];
-

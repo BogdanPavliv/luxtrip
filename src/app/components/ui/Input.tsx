@@ -1,18 +1,12 @@
 import React from 'react';
 import { Field, useField } from "formik";
 import { Manrope } from "next/font/google";
+import { InputProps } from "../../types/others";
 
 const manrope500 = Manrope({
   subsets: ["latin"],
   weight: "500"
 });
-
-type InputProps = {
-    id: string;
-    label?: string;
-    name: string;
-    placeholder?: string;
-}
 
 export const Input: React.FC<InputProps>  = ({label, placeholder, ...props}) => {
   const [, meta] = useField(props);

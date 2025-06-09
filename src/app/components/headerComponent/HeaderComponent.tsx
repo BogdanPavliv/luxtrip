@@ -10,12 +10,9 @@ import { RootState } from '../../store/store';
 
 import { toggleMenu } from "../../store/headerSlice";
 import { openModal } from "../../store/modalSlice";
+import { isTopOfPageProps } from "../../types/nav";
 
-type TopOfPageProps = {
-  isTopOfPage: boolean;
-}
-
-const HeaderComponent = ({isTopOfPage}: TopOfPageProps) => {
+const HeaderComponent = ({isTopOfPage}: isTopOfPageProps) => {
   const dispatch = useDispatch();
   const isMenuToggled = useSelector((state: RootState) => state.header.isMenuToggled);
   // const isModalOpen = useSelector((state: RootState) => state.modal.isModalOpen);

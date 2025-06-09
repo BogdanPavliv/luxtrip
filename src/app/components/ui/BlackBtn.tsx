@@ -1,16 +1,12 @@
-import React, {ReactNode} from 'react';
+import { BlackBtnProps } from "../../types/others";
 
-type Props = {
-    children: ReactNode;
-}
-
-const BlackBtn: React.FC<Props> = ({children}) => {
+const BlackBtn: React.FC<BlackBtnProps> = ({ children }) => {
   return (
-    <button className="btn-balck" type='submit'>
-        <span></span>
-        {children}
+    <button className="btn-balck" type="submit">
+      <span></span>
+      {children}
     </button>
-  )
-}
+  );
+};
 
 export default BlackBtn;
