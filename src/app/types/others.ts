@@ -24,7 +24,15 @@ export type CustomModalProps = {
   closeModal: () => void;
 };
 
-export type Category = 'World' | 'Africa' | 'Asia' | 'Europe' | 'North America' | 'South America' | 'Antarctica' | 'Australia';
+export type Category =
+  | "World"
+  | "Africa"
+  | "Asia"
+  | "Europe"
+  | "North America"
+  | "South America"
+  | "Antarctica"
+  | "Australia";
 
 export interface Images {
   image: string;
@@ -52,7 +60,7 @@ export interface Review {
   name: string;
   text: string;
   image: string;
-  place: string
+  place: string;
 }
 
 export interface Luxtrip {
@@ -72,4 +80,17 @@ export interface Book {
   text: string;
   image: string;
   info: Info;
+}
+
+export interface FilterComponentProps {
+  onFilterChange: (category: Category) => void;
+  categories: Category[];
+}
+
+export interface HeaderState {
+  isMenuToggled: boolean;
+}
+
+export interface ModalState {
+  isModalOpen: boolean;
 }

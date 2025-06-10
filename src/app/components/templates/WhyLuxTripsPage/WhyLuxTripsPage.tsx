@@ -8,7 +8,7 @@ import SubscribeForm from "../../../components/ui/SubscribeForm";
 
 const WhyLuxTripsPage = () => {
   return (
-    <main className="main why-lux-page-bg">
+    <>
       <LuxtripsPreview />
       <Experience />
       <Offers />
@@ -17,7 +17,7 @@ const WhyLuxTripsPage = () => {
       <div className="newsletter-wrapper">
         <SubscribeForm />
       </div>
-    </main>
+    </>
   )
 }
 

@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
-
 import { Category } from "../../types/others";
-
-interface FilterComponentProps {
-    onFilterChange: (category: Category) => void;
-    categories: Category[];
-}
+import { FilterComponentProps } from "../../types/others";
 
 const FilterComponent: React.FC<FilterComponentProps> = ({ onFilterChange, categories }) => {
   const [selectedCategory, setSelectedCategory] = useState<Category>('World');

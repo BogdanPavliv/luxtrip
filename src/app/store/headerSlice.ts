@@ -1,24 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-interface HeaderState {
-    isMenuToggled: boolean;
-}
+import { HeaderState } from "../types/others";
 
 const initialState: HeaderState = {
-    isMenuToggled: false,
-}
+  isMenuToggled: false,
+};
 
 const headerSlice = createSlice({
-    name: "header",
-    initialState,
-    reducers: {
-        toggleMenu: (state) => {
-          state.isMenuToggled = !state.isMenuToggled;
-        },
-        closeMenu: (state) => {
-          state.isMenuToggled = false;
-        },
+  name: "header",
+  initialState,
+  reducers: {
+    toggleMenu: (state) => {
+      state.isMenuToggled = !state.isMenuToggled;
     },
+    closeMenu: (state) => {
+      state.isMenuToggled = false;
+    },
+  },
 });
 
 export const { toggleMenu, closeMenu } = headerSlice.actions;
